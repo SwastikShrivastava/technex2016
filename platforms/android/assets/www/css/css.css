@@ -1,0 +1,640 @@
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  overflow: hidden;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(./a.otf);
+}
+
+.info {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 10px;
+  font-size: 2.2rem;
+  color: #fff;
+  
+}
+.info__tip {
+  font-size: 55%;
+}
+@media (max-width: 700px) {
+  .info {
+    font-size: 1.6rem;
+  }
+}
+
+select {
+  background: none;
+  border: none;
+  color: #a75151;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+select:focus {
+  outline: none;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+#owl,
+#raccoon,
+#bear {
+  visibility: hidden;
+}
+.down{
+   position: absolute;
+   left: 0vw;
+    top: 50vh;
+    height:80vh;
+    width: 120vw;
+    background-color: #009688;
+}
+#gif{
+    position: absolute;
+    top:65%;
+    left:-12%;
+    height: 30%;
+    width: 50%;
+}
+#Tripdetails{
+    position: absolute;
+    top:63%;
+    left:35%;
+    height: 30%;
+    width: 65%;
+    font-size: 3.5vw;
+    font-family: myFirstFont;
+}
+
+#thisisname{
+    position: absolute;
+    font-size: 12vw;
+    color: white;
+    top:56%;
+    left:50%;
+     transform: translate(-50%,-50%);
+}
+
+#fp{
+    position: absolute;
+    font-size: 3vw;
+    color: white;
+    bottom:1%;
+    left:50%;
+     transform: translate(-50%,-50%);
+}
+
+#allback{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    animation-duration: 0.3s;
+    display: block;
+}
+.img2{
+    position: absolute;
+    left: 0%;
+    top: 30vh;
+    height:23vh;
+    width: 100vw;
+}
+.img1{
+     position: absolute;
+    left: 0%;
+    top: 33vh;
+    height:23vh;
+    width: 100vw;
+    
+}
+.bodyback{
+    position: absolute;
+    top:-0vh;
+    height: 40vh;
+    width: 100vw;
+    left: 0vw;
+}
+.logo{
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    height: 18vh;
+    width: 18vh;
+    background:rgba(255,234,59,1);
+    -ms-transform:rotate(45deg) translate(-50%,-50%);
+    -webkit-transform: rotate(45deg)   translate(-75%,0%);
+    transform:rotate(45deg)   translate(-75%,0%);
+    align-content: center;
+    border-radius: 15%;
+}
+#logo1{
+    position: absolute;
+    top: 68%;
+    left: 49%;
+    height: 18vh;
+    width: 18vh;
+    -ms-transform:translate(-50%,-50%) ;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.moon{
+    top: 5%;
+    left: 5%;
+    position: absolute;
+}
+#login{
+    position: absolute;
+    top: 82%;
+    left: 15%;
+    height: 10vh;
+    width: 35vw;
+    font-size: 5vh;
+    color:rgba(255,235,59,1);
+    font-family: myFirstFont;
+}
+#signup{
+    position: absolute;
+    top: 82%;
+    left: 55%;
+    height: 10vh;
+    width: 35vw;
+    font-size: 5vh;
+    color:rgba(255,235,59,1);   
+    font-family: myFirstFont;
+}
+#logf{
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    height: 10vh;
+    width: 10vh;
+    display: none;
+     animation-duration: 0.5s;
+}
+#logg{
+    position: absolute;
+    top: 88%;
+    left: 70%;
+    height: 10vh;
+    width: 10vh;
+    display: none;
+    animation-delay: 0.2s;
+    animation-duration: 0.5s;
+}
+#signf{
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    height: 10vh;
+    width: 10vh;
+    display: none;
+     animation-duration: 0.5s;
+}
+#signg{
+    position: absolute;
+    top: 88%;
+    left: 15%;
+    height: 10vh;
+    width: 10vh;
+    display: none;
+    animation-delay: 0.2s;
+     animation-duration: 0.5s;
+}
+
+#backed{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+    
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./a.otf);
+}
+body{
+    font-family: myFirstFont;
+}
+#top{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 20%;
+    width: 100%;
+    background-color: #009688;
+}
+.fa-bars{
+	position:absolute;
+	top:20%;
+	left:3%;
+	color:white;
+    
+}
+#nav{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 60%;
+    background-color: #009688;
+    display: none;
+    animation-duration: 0.3s;
+    box-shadow: 10px 10px 15px #223c40;
+}
+.fa-close{
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    color: white;
+}
+#name{
+    position: absolute;
+    top: -8%;
+    left: 15%;
+    color: white;
+    font-size: 5vh;
+}
+.card{
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    background-color: #009688;
+    height: 35%;
+    width: 100%;
+    box-shadow: 10px 10px 10px #223c40;
+}
+.card1{
+    position: absolute;
+    top: -15%;
+    left: 0%;
+    height: 50%;
+    width: 100%;
+    background-color: black;
+}
+.card2{
+    position: absolute;
+    top: 9%;
+    left: 0%;
+    height: 8%;
+    width: 100%;
+    box-shadow: 10px 10px 5px #223c40;
+    background-image:url('./city.png');
+	background-size:contain; 
+}
+.card5{
+    position: absolute;
+    top: 8%;
+    left: 0%;
+    height: 8%;
+    width: 100%;
+    background-image:url('./city2.png');
+	background-size:contain; 
+}
+.maps{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    height: 40%;
+    width: 100%;
+    box-shadow: 15px 15px 15px grey;
+    
+}
+.out1{
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    height: 20%;
+    width: 100%;
+    box-shadow: 25px 25px 25px grey;
+    background-color: white;
+}
+.out2{
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    height: 20%;
+    width: 100%;
+    box-shadow: 5px 5px 5px grey;
+    background-color: white;
+}
+.sq1{
+	top:13%;
+	left:5%;
+	height:15vh;
+	width:15vh;
+	position:absolute;
+	border-radius: 50%;
+    background-image:url('./beach.jpg');
+	background-size:cover;
+}
+.sq2{
+	top:13%;
+	left:5%;
+	height:15vh;
+	width:15vh;
+	position:absolute;
+	border-radius: 50%;
+	background-image:url('./cat.jpg');
+	background-size:cover;
+}
+p,h3{
+    font-family: myFirstFont;
+}
+.h3{
+    font-family: myFirstFont;
+    position: absolute;
+    font-size: 3vh;
+    left: 33%;
+    top:5%;
+    font-weight: 700;
+}
+.text{
+    font-family: myFirstFont;
+    position: absolute;
+    font-size: 2vh;
+    left: 33%;
+    top:45%;
+    font-weight: 100;
+    
+}
+.fa-search{
+    top:18%;
+	left:5%;
+	position:absolute;
+    color:white;
+    font-family: myFirstFont;
+}
+.fa-dot-circle-o{
+    top:38%;
+	left:5%;
+	position:absolute;
+   color:white;
+}
+.fa-list{
+    top:58%;
+	left:5%;
+	position:absolute;
+   color:white;
+}
+.fa-taxi{
+    top:78%;
+	left:5%;
+	position:absolute;
+   color:white;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.card3{
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    background-color: #009688;
+    height: 30%;
+    width: 100%;
+}
+#noti{
+    position: absolute;
+    top:20%;
+    right:5%;
+    color: white;
+}
+#notifi{
+    position: absolute;
+    height: 40%;
+    width:47%;
+    top:10%;
+    right:2%;
+    display: none;
+}
+.fa-facebook{
+    top:33%;
+	left:5%;
+	position:absolute;
+   color:white;
+}
+.fa-cog{
+    top:58%;
+	left:5%;
+	position:absolute;
+   color:white;
+}
+.card4{
+    position: absolute;
+    top: 16%;
+    left: 0%;
+    background-color: #009688;
+    height: 20%;
+    width: 100%;
+}
+.fa-suitcase{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    color: white;
+}
+.fa-user{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    color: white;
+}
+.fa-motorcycle{
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    color: white;
+}
+.fa-map-marker{
+    position: absolute;
+    top: 70%;
+    left: 85%;
+    color: white;
+}
+#user{
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top:20%;
+    left:0px;
+    background-color: white;
+   display: none;
+    animation-duration: 0.4s;
+}
+#trip{
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top:20%;
+    left:0px;
+    background-color: white;
+   display: none;
+    animation-duration: 0.4s;
+}
+
+#tripmap{
+    position: absolute;
+    height:60%;
+    width: 100%;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+
+#ba{
+    position: absolute;
+    height:40%;
+    width: 100%;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+
+#pro{
+     position: absolute;
+    height:25%;
+    width: 100%;
+    top:4%;
+    overflow: hidden;
+    
+}
+
+#te{
+    position: absolute;
+    height:25%;
+    width: 100%;
+    top:28%;
+    color:white;
+    font-size:5vh;
+}
+
+
+#line{
+    position: absolute;
+    height:50%;
+    width: 1%;
+    left:10%;
+    top:45%;
+    background-color: #009688;
+}
+
+#cut{
+    position: absolute;
+    height:10%;
+    width: 100%;
+    top:47%;
+    left:14%;
+}
+
+#hot{
+    position: absolute;
+    height:10%;
+    width: 100%;
+    top:64%;
+    left:14%;
+}
+
+#tsh{
+    position: absolute;
+    height:10%;
+    width: 100%;
+    top:82%;
+    left:14%;
+}
+
+#des1{
+    position: absolute;
+    height:10%;
+    width: 100%;
+    top:48%;
+    left:40%;
+    font-size: 2.5vh;
+}
+
+#des2{
+    position: absolute;
+    height:10%;
+    width: 100%;
+    top:65%;
+    left:40%;
+    font-size: 2.5vh;
+}
+
+#des3{
+    position: absolute;
+    height:10%;
+    width: 100%;
+    top:83%;
+    left:40%;
+    font-size: 2.5vh;
+}
+
+#star{
+    position: absolute;
+    height:3.5%;
+    width: 100%;
+    top:52%;
+    left:45%;
+    
+}
+
+#like{
+    position: absolute;
+    left:5%;
+}
+#heart{
+    position: absolute;
+    left:25%;
+}
+
+#star1{
+    position: absolute;
+    height:3.5%;
+    width: 100%;
+    top:69%;
+    left:45%;
+    
+}
+
+#star3{
+    position: absolute;
+    height:3.5%;
+    width: 100%;
+    top:88%;
+    left:45%;
+    
+}
+
+#motor{
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top:20%;
+    left:0px;
+    overflow: hidden;
+    background-color: white;
+    display:none;
+     animation-duration: 0.4s;
+  
+}
